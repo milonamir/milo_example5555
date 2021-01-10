@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Build and Push to Docker Hub
-      uses: docker/build-push-action@v2
+      uses: docker://alpine:3.8
       with:
         image: milonamir/milo-example5555
         registry: docker.io
