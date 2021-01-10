@@ -31,7 +31,8 @@ jobs:
         password: c98cb1ee-6b4b-448e-ad70-007484e96353
         
     - name: Build and Push container to registry
-      run: |        
+      run: |       
+        docker tag v1.0.1 milonamir/milo-example5555:v1.0.1
         docker push milonamir/milo-example5555:v1.0.1
         
 
