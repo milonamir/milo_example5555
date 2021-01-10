@@ -23,10 +23,14 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Build and Push to Docker Hub            
-      env:
+      
+    - name: Build and Push to Docker Hub
+      uses: azure/docker-login@v1
+      with:            
         DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      run: |
-        winpty docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-      
+        
+    - name: Build and Push container to registry
+      run: |        
+        docker push milonamir/milo_example5555:1.1.1
+        
