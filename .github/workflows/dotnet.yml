@@ -32,7 +32,6 @@ jobs:
         
     - name: Build and Push container to registry
       run: |        
-        docker tag milo-example5555:v1.0.v milonamir/milo-example5555:v1.0.1
         docker push milonamir/milo-example5555:v1.0.1
         
 
