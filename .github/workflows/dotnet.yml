@@ -32,7 +32,7 @@ jobs:
         
     - name: Build and Push container to registry
       run: |               
-        docker tag milonamir/milo-example5555 docker.io/milonamir/milo-example5555:1.0.0
+        docker tag milonamir/milo_example5555 docker.io/milonamir/milo-example5555:1.0.0
         docker push docker.io/milonamir/milo-example5555:1.0.0
         
 
