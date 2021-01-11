@@ -11,12 +11,7 @@ namespace milo_example55
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Temp\my_file.txt";
-
-            using (StreamWriter sw = File.CreateText(path))
-            {
-                sw.WriteLine("Milo test: " + DateTime.Now.ToString());
-            }
+            Console.WriteLine("Milo runs the test at : " + DateTime.Now.ToString());
         }
     }
 }
