@@ -27,7 +27,7 @@ jobs:
     - name: Build and Push container to Docker Hub
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: milonamir/milo-example5555
+        image: milonamir/milo-example5555:latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
