@@ -29,6 +29,6 @@ jobs:
       with:
         image: milonamir/milo-example5555
         registry: docker.io
-        tag: latest
+        tags: latest
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
